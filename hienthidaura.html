@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function showMessage1(){
+     alert('Xin chào!');
+ }
+ 		function showMessage2(){
+     document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+ }
+ 	function showMessage3(){
+     console.log('Xin chào!');
+ }
+	</script>
+</head>
+<body>
+	<button type="button" onclick="showMessage1();">Click Me!</button>
+	
+	<div id="messageDiv">
+	<button type="button" onclick="showMessage2();">Click Me!</button>
+	</div>
+
+	<button type="button" onclick="showMessage3();">Click Me!</button>	
+</body>
+</html>
