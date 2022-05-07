@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="baitap.js"></script>
+</head>
+<body>
+<form>
+    <table>
+        <tr style="text-align: center;">
+            <td>
+                <label for="Amount">Amount</label>
+            </td>
+            <td>
+                <label for="fromCurrency">From Currency</label>
+            </td>
+            <td>
+                <label for="toCurrency">toCurrency</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="input" name="Amount">
+            </td>
+            <td>
+                <select id="fromCurrency">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="toCurrency">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" onclick="convert()" value="Convert">
+            </td>            
+    </table>
+</form>
+<p id="demo"></p>    
+</body>
+</html>
