@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- Cách 1: -->
+    <!-- <script>
+        let message;
+        let login = prompt("nhập");
+        switch (login) {
+            case Employee:
+                message = "Hello";
+                alert(message);
+                break;
+            case Director:
+                message = "Greeting";
+                alert(message);
+                break;
+            case '':
+                message = "Nologin";
+                alert(message);
+                break;
+            default:
+                message = '';
+                alert(message);
+                break;
+        }
+    </script> -->
+    <!-- Cách 2 -->
+    <script>
+        login = prompt("Nhập dữ liệu:");
+        message =
+            (login == "Director") ? "Greeting" :
+            (login == "Employee") ? "Hello" :
+            (login == '') ? "Nologin" :
+            '';
+        alert(message);
+    </script>
+</body>
+
+
+</html>
