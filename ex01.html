@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  Cách 1 -->
+    <script>
+        function myFunc() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if (username == "Admin") {
+                if (password == "TheMaster") {
+                    alert('Welcome');
+                } else if (password == "") {
+                    alert('Canceled');
+                } else {
+                    alert('Wrong password');
+                }
+            } else if (username == "") {
+                alert('Canceled');
+            } else {
+                alert(`i don't know you `);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Hàm if else if</h1>
+    <input type="text" id="username" placeholder="nhập tên " />
+    <input type="text" id="password" placeholder="nhập password" /><br>
+    <input type="button" onclick="myFunc() " value="Click" />
+</body>
+
+</html>
