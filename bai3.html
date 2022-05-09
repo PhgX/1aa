@@ -47,16 +47,20 @@
 <script>
     function myFunc() {
         let a = parseFloat(prompt("Nhập số", ''));
-        if (a == 0) {
-            alert("0");
-        }
+        
         switch (a > 0) {
             case true:
                 alert("1");
                 break;
-            default:
-                alert("-1");
-                break;
+            case false:
+                switch (a < 0) {
+                    case true:
+                        alert("-1");
+                        break;
+                    case false:
+                        alert("0");
+                        break;
+                }
         }
     }
 </script>
