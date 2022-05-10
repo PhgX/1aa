@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let goinoihat = parseInt(prompt("Nhập thời gian gọi nội hạt (phút)",0));
+        let goilientinh = parseInt(prompt("Nhập thời gian gọi liên tỉnh (phút)",0));
+        let goimangdd = parseInt(prompt("Nhập thời gian gọi mạng di động (phút)",0));
+        let goidichvu = parseInt(prompt("Nhập thời gian gọi dịch vụ (phút)",0));
+        let cuocthuebao = 22000;
+
+        let total = goinoihat*220 + goilientinh*790 + goimangdd*790 + goidichvu*2000 + cuocthuebao;
+        alert(total);
+    </script>
+</body>
+</html>

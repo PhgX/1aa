@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <script>
+        function myFunc() {
+            let a = document.getElementById("nhapA").value;
+            let b = document.getElementById("nhapB").value;      
+            if (b!=0){      
+                if (!(a%b)) {
+                    document.getElementById("demo").innerHTML = "a chia hết cho b";
+                } else {
+                    document.getElementById("demo").innerHTML = "a không chia hết cho b";            
+                }                 
+            } else {
+                document.getElementById("demo").innerHTML = "Không thể thực hiện phép tính";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="nhapA" placeholder="Nhập a">
+    <input type="text" id="nhapB" placeholder="Nhập b">
+    <button type="button" onclick="myFunc()" >Kiểm tra</button>
+    <p>Kết quả:</p>
+    <p id="demo"></p>
+</body>
+</html>

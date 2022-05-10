@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diemTBkt = parseFloat(prompt("Nhập điểm kiểm tra trung bình môn"));        
+        let diemcuoiky = parseFloat(prompt("Nhập điểm thi cuối kỳ"));
+        let a = diemTBkt * 2 + diemcuoiky;
+        let DTBmHK = a/3;
+        if (DTBmHK > 8  ) {
+            alert("Loại giỏi"); 
+        }
+        else if (DTBmHK > 6.5 && DTBmHK < 8) {
+            alert("Loại khá");
+        }
+        else if (DTBmHK > 5 && DTBmHK < 6.5) {
+            alert("Loại Trung bình");
+        }
+        else {
+            alert("Loại kém");
+        }
+    </script>    
+</body>
+</html>
