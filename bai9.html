@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. 
+        Điều kiện để a,b,c là cạnh của một tam giác là:
+    a,b,c > 0
+    a + b > c
+    b + c > a
+    a + c > b -->
+
+    <script>
+      let a = +prompt("nhập chiều dài cạnh a");
+      let b = +prompt("nhập chiều dài cạnh b");
+      let c = +prompt("nhập chiều dài cạnh c");  
+                if(a+b>c){
+                    if(a+c>b){
+                        if(b+c>a){
+                           alert("a = " + a + " ,b = " + b + " ,c = " + c + " là 3 cạnh của tam giác");
+                        }  else {
+                           alert("a = " + a + " ,b = " + b + " ,c = " + c + " không phải là 3 cạnh của tam giác");
+                        }
+                    } else {
+                      alert("a = " + a + " ,b = " + b + " ,c = " + c + " không phải là 3 cạnh của tam giác");
+                    }
+                } else {
+                  alert("a = " + a + " ,b = " + b + " ,c = " + c + " không phải là 3 cạnh của tam giác");
+                }     
+    </script>
+</body>
+</html>

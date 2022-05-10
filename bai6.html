@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Giải phương trình bậc 1.<br> ax + b=0</p>
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");       
+        let x = -b/a;
+                
+        if (a == 0 && b == 0){
+            alert("Phương trình có vô số nghiệm");            
+        } 
+        else { 
+            if (a != 0 && b != 0 ){               
+                alert("Phương trình có nghiệm x = " + x);
+            }
+            else if (a != 0 && b == 0) {
+                alert("Phương trình có nghiệm x = 0");
+            }
+            else {
+                alert ("Phương trình vô nghiệm");
+            }
+        }       
+    </script>
+</body>
+</html>

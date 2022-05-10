@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dientieuthu" placeholder="Nhập số điện tiêu thụ">
+    <input type="button" onclick="tinhtien()" value="Tính tiền">
+    <script>
+        function tinhtien() {
+        let sodien = parseInt(document.getElementById("dientieuthu").value);
+        var giaban = '';           
+        if (sodien <= 50 && sodien >= 0) {
+            giaban = 1678;
+            alert("Số điện tiêu thụ nằm trong Bậc 1, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        } else if (sodien < 101) {
+            giaban = 1734;
+            alert("Số điện tiêu thụ nằm trong Bậc 2, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        } else if (sodien < 201) {
+            giaban = 2014;
+            alert("Số điện tiêu thụ nằm trong Bậc 3, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        } else if (sodien < 301) {
+            giaban = 2536;
+            alert("Số điện tiêu thụ nằm trong Bậc 4, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        } else if (sodien < 401) {
+            giaban = 2834;
+            alert("Số điện tiêu thụ nằm trong Bậc 5, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        } else {
+            giaban = 2927;
+            alert("Số điện tiêu thụ nằm trong Bậc 6, hóa đơn là: "  + sodien*giaban + " VNĐ");
+        }
+    }
+    </script>
+</body>
+</html>

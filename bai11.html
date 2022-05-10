@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình tính thuế thu nhập cá nhân.</p>
+    
+    <script>
+        let thunhap = +prompt("Thu nhập cá nhân");
+        var thue = '';
+        if (thunhap <= 4000000) {
+            thue = 0;
+            alert("Bậc 1: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <6000000) {
+            thue = 5/100;
+            alert("Bậc 2: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <9000000) {
+            thue = 10/100;
+            alert("Bậc 3: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <14000000) {
+            thue = 15/100;
+            alert("Bậc 4: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <24000000) {
+            thue = 20/100;
+            alert("Bậc 5: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <44000000) {
+            thue = 25/100;
+            alert("Bậc 6: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else if (thunhap <84000000) {
+            thue = 30/100;
+            alert("Bậc 7: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        } else {
+            thue = 35/100;
+            alert("Bậc 8: Thuế thu nhập cá nhân phải nộp là: " + thue*thunhap);
+        }
+    </script>
+</body>
+</html>

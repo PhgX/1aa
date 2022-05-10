@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Giải phương trình bậc 2<br>ax<sup>2</sup>+bx+c=0</h1>
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let c = +prompt("Nhập c");
+        let delta = Math.pow(b,2) - 4*a*c;
+        let x1 = -c/b;        
+        let x2 = -b/2*a;
+        let tinhtoan = -b + Math.sqrt(delta);
+        let tinhtoan1 = -b - Math.sqrt(delta);
+        let x3 = tinhtoan/2*a;
+        let x4 = tinhtoan1/2*a;
+        
+        if (a != 0) {
+            if (delta < 0) {
+                alert("Phương trình vô nghiệm");
+            }
+            else if (delta == 0) {
+                alert("Phương trình có nghiệm kép x1 = x2 = " + x3);
+            }
+            else {
+                alert("Phương trình có 2 nghiệm phân biệt là x1 = " + x4 + " " + "x2 = " + x5)
+            }
+        }
+        else {
+            alert("Phương trình có nghiệm x = " + x1);
+        }  
+    </script>
+</body>
+</html>

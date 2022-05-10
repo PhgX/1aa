@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1: Chuyển từ độ C sang độ F.
+    °C  x  9/5 + 32 = °F -->
+    <input type="button" id="doC" onclick="inputC()" value="Nhập độ C">
+    <input type="button" id="doF" onclick="inputF()" value="Nhập độ F">
+    <p id="ketqua"></p>
+<script>
+
+    function inputC(){
+        let doC = parseFloat(prompt("Nhập độ C"));
+        switch (doC) {
+            case (NaN): {
+                doC = prompt("Xin nhập bằng số");
+            }
+            default: {
+                let doF = doC*9/5 + 32;
+                document.getElementById("ketqua").innerHTML = doC + " " + "Độ C = " + doF;
+            }
+        }
+    }
+    
+    function inputF(){
+        let doF = parseFloat(prompt("Nhập độ F"));
+        let a = doF - 32
+        let doC = a*9/5 + 32;
+        document.getElementById("ketqua").innerHTML = doF + " " + "Độ F = " + doC;
+    }
+     
+</script>        
+   
+</body>
+</html>

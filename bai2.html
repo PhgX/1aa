@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="met" placeholder="nhập độ dài (m)">
+    <input type="button" onclick="convert()" value="Chuyển sang feet">
+    <p id="demo"></p>
+    <script>
+        function convert() {
+            let met = parseFloat(document.getElementById("met").value);
+            if (met >= 0) {            
+            let ft = met*3.2808;
+            document.getElementById("demo").innerHTML =  met + " " + "mét " + "bằng " + ft + "feet";
+            }
+            else {
+                document.getElementById("met").value = "";
+                document.getElementById("demo").innerHTML = "Xin nhập lại";
+        }
+    }
+    </script>
+</body>
+</html>

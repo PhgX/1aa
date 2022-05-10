@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính diện tích hình vuông khi biết cạnh a</h1>
+    <script>
+        let a = +prompt("Nhập chiều dài cạnh");
+        let s = Math.pow(a,2);
+        switch (a > 0) {
+            case true: {
+                alert("Diện tích hình vuông = " + s);
+                break;
+            }
+            default: {
+                alert("Nhập lại chiều dài cạnh");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
